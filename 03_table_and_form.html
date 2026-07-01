@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฝึกหัดที่ 3: ตารางและฟอร์ม</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>แบบฝึกหัดที่ 3: ตารางและฟอร์ม</h1>
+
+    <h2>เป้าหมาย</h2>
+    <p>ฝึกสร้างตารางและแบบฟอร์มพื้นฐานด้วย HTML เท่านั้น</p>
+
+    <h2>ตารางตารางเรียน</h2>
+    <table border="1">
+        <caption>ตัวอย่างตารางเรียน</caption>
+        <thead>
+            <tr>
+                <th>วัน</th>
+                <th>วิชา</th>
+                <th>เวลา</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>จันทร์</td>
+                <td>HTML พื้นฐาน</td>
+                <td>09:00 - 10:00</td>
+            </tr>
+            <tr>
+                <td>อังคาร</td>
+                <td>การเขียนเนื้อหาเว็บ</td>
+                <td>10:00 - 11:00</td>
+            </tr>
+            <tr>
+                <td>พุธ</td>
+                <td>ตารางและฟอร์ม</td>
+                <td>13:00 - 14:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>แบบฟอร์มสมัครเรียน</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="fullname">ชื่อ-นามสกุล:</label><br>
+            <input type="text" id="fullname" name="fullname">
+        </p>
+
+        <p>
+            <label for="email">อีเมล:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="level">ระดับความรู้ HTML:</label><br>
+            <select id="level" name="level">
+                <option value="beginner">เริ่มต้น</option>
+                <option value="intermediate">ปานกลาง</option>
+                <option value="advanced">สูง</option>
+            </select>
+        </p>
+
+        <p>
+            หัวข้อที่สนใจ:<br>
+            <input type="checkbox" id="topic1" name="topic" value="text">
+            <label for="topic1">ข้อความ</label><br>
+
+            <input type="checkbox" id="topic2" name="topic" value="image">
+            <label for="topic2">รูปภาพ</label><br>
+
+            <input type="checkbox" id="topic3" name="topic" value="form">
+            <label for="topic3">ฟอร์ม</label>
+        </p>
+
+        <p>
+            <label for="message">ข้อความเพิ่มเติม:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">ส่งข้อมูล</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </p>
+    </form>
+
+    <h2>โจทย์ฝึกเพิ่มเติม</h2>
+    <ol>
+        <li>เพิ่มแถวในตารางอีก 2 แถว</li>
+        <li>เพิ่มช่องกรอกเบอร์โทรศัพท์</li>
+        <li>เพิ่มตัวเลือกหัวข้อที่สนใจอีก 2 ข้อ</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --facebook-blue: #1877f2;
+    --facebook-blue-dark: #166fe5;
+    --facebook-green: #42b72a;
+    --page-bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --primary-text: #050505;
+    --secondary-text: #65676b;
+    --border: #dddfe2;
+    --hover-bg: #f2f3f5;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+html {
+    background: var(--page-bg);
+}
+
+body {
+    width: min(920px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 88px 0 40px;
+    background: var(--page-bg);
+    color: var(--primary-text);
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+body::before {
+    content: "facebook";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 56px;
+    padding-left: max(16px, calc((100vw - 920px) / 2));
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    color: var(--facebook-blue);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0;
+}
+
+h1 {
+    margin: 0 0 16px;
+    padding: 22px 24px;
+    background: var(--facebook-blue);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+h2,
+p,
+ul,
+ol,
+dl,
+figure,
+table,
+form,
+hr {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding: 16px 18px 6px;
+    background: var(--card-bg);
+    border-radius: 8px 8px 0 0;
+    color: var(--primary-text);
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+p,
+ul,
+ol,
+dl,
+figure,
+table,
+form {
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding: 14px 18px 18px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+h2 + p,
+h2 + ul,
+h2 + ol,
+h2 + dl,
+h2 + figure,
+h2 + table,
+h2 + form {
+    border-radius: 0 0 8px 8px;
+}
+
+ul,
+ol {
+    padding-left: 42px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    color: var(--facebook-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--facebook-blue);
+}
+
+em {
+    color: var(--secondary-text);
+}
+
+mark {
+    padding: 2px 6px;
+    background: #e7f3ff;
+    border-radius: 999px;
+    color: var(--facebook-blue-dark);
+}
+
+hr {
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    background: var(--border);
+    border: 0;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+figcaption,
+dd,
+caption {
+    color: var(--secondary-text);
+}
+
+dt {
+    margin-top: 12px;
+    color: var(--facebook-blue);
+    font-weight: 700;
+}
+
+dd {
+    margin-left: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 0;
+}
+
+caption {
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    background: #e7f3ff;
+    color: var(--facebook-blue-dark);
+}
+
+tr:nth-child(even) td {
+    background: #f7f8fa;
+}
+
+form p {
+    max-width: none;
+    margin: 0 0 14px;
+    padding: 0;
+    box-shadow: none;
+}
+
+label {
+    color: var(--primary-text);
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #f5f6f7;
+    color: var(--primary-text);
+    font: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgba(24, 119, 242, 0.25);
+    border-color: var(--facebook-blue);
+    background: #ffffff;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 10px 8px 0 0;
+    accent-color: var(--facebook-blue);
+    vertical-align: middle;
+}
+
+button {
+    min-height: 40px;
+    margin-right: 8px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--facebook-blue);
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+button:hover,
+button:focus {
+    background: var(--facebook-blue-dark);
+}
+
+button[type="reset"] {
+    background: #e4e6eb;
+    color: var(--primary-text);
+}
+
+button[type="reset"]:hover,
+button[type="reset"]:focus {
+    background: #d8dadf;
+}
+
+@media (max-width: 640px) {
+    body {
+        width: min(100% - 20px, 920px);
+        padding-top: 76px;
+        font-size: 15px;
+    }
+
+    body::before {
+        height: 52px;
+        padding-left: 12px;
+        font-size: 26px;
+        line-height: 52px;
+    }
+
+    h1 {
+        padding: 18px;
+        font-size: 23px;
+    }
+
+    h2 {
+        padding: 14px 14px 6px;
+        font-size: 18px;
+    }
+
+    p,
+    ul,
+    ol,
+    dl,
+    figure,
+    table,
+    form {
+        padding: 12px 14px 16px;
+    }
+
+    ul,
+    ol {
+        padding-left: 34px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
